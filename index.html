@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(22, 8, 8);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: rgb(43, 36, 36);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul li a:hover {
+            color: brown;
+            font-size: 1.02rem;
+        }
+
+        main hr {
+            border: 0;
+            background: brown;
+            height: 1.5px;
+            margin: 20px 90px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 135px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+            margin: 80px 0;
+
+        }
+
+        .rightSection img {
+            width: 80%;
+
+        }
+
+        .name {
+            color: brown;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: brown;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 95vh;
+        }
+
+        .secondSection h1 {
+            font-size: 3vw;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 80vm;
+            margin: 56px 0;
+            height: 2px;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 90px;
+            width: 2px;
+            background-color: white;
+            margin: 0 180px;
+        }
+
+        .image-top { 
+            
+        }
+
+        .vertical-title {
+            width: auto;
+
+        }
+
+        .vertical-desc {
+            width: 300px;
+
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 20px;
+            background-color: rgb(244, 150, 150);
+        }
+    </style>
+</head>
+
+<body>
+
+    <head>
+        <nav>
+            <div class="left">Manoj's Portfolio</div>
+            <div class="rihgt">
+                <ul>
+                    <li><a herf="/">Home</a></li>
+                    <li><a herf="/">About</a></li>
+                    <li><a herf="/">Projects</a></li>
+                    <li><a herf="/">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </head>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hello! My name is <span class="name"> Manoj singh</span>
+                <div>And I'm a passionate </div>
+                <span id="element"></span>
+
+            </div>
+            <div class="rightSection">
+                <img src="me.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">Things I have done so far</span>
+            <h1>Projects</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img clas="image-top" src="projectpic.png" alt="" style="width: 20px;">
+                    <div class="vertical-title">
+                        Gold Gym Website
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro nam repudiandae itaque, earum
+                        beatae nihil ullam dolorum aliquam autem explicabo ipsa aliquid reiciendis non vel sed molestias
+                        distinctio. Laudantium, rerum?
+                    </div>
+                </div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+    <footer>
+        <p>Author: Manoj Singh</p>
+    </footer>
+
+</body>
+
+</html>
